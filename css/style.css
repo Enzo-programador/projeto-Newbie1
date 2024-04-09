@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+
+.container{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin: 8% auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.img-container{
+    width: 300px;
+    height: 450px;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.description{
+    width: 300px;
+    height: 450px;
+    padding: 32px;
+}
+
+.text-description{
+    max-width: 236px;
+
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 14.63px;
+    font-size: 12px;
+}
+
+h1{
+    margin-bottom: 24px;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #1c232b;
+}
+
+p{
+    margin-bottom: 29px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.value{
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.onSale{
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3d8168;
+}
+
+.original-value{
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    color: #6c7289;
+}
+
+button{
+    width: 236px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #3D8168;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button img{
+    margin-right: 11.61px;
+}
+
+button:hover{
+    background: #1a4032;
+}
+
+@media(max-width:768px){
+    .container{
+        max-width: 343px;
+        height: 611px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container{
+        height: 240px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .text-description{
+        width: 295px;
+    }
+}
